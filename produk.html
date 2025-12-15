@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produk - Hafis Collections</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.js"></script>
+  <body id="produk">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Hafis Collections</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavProd">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavProd">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Kami</a></li>
+        <li class="nav-item"><a class="nav-link active" href="produk.html">Produk</a></li>
+        <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container my-4">
+  <h2>Produk Unggulan</h2>
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="/images/Jeans.jpg" class="card-img-top product-thumb" alt="Jeans Cutbray" data-src="/images">
+        <div class="card-body">
+          <h5 class="card-title">Jeans Cutbray</h5>
+          <p class="card-text">Model klasik, nyaman untuk sehari-hari.</p>
+          <button class="btn btn-primary btn-order">Pesan</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="/images/skiny.jpg" class="card-img-top product-thumb" alt="Jeans Pensil" data-src="/images">
+        <div class="card-body">
+          <h5 class="card-title">Jeans Pensil</h5>
+          <p class="card-text">Slim fit, cocok gaya kasual.</p>
+          <button class="btn btn-primary btn-order">Pesan</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="/images/jeanskulot.jpg" class="card-img-top product-thumb" alt="Jeans Kulot" data-src="/images">
+        <div class="card-body">
+          <h5 class="card-title">Jeans Kulot</h5>
+          <p class="card-text">Longgar & stylish.</p>
+          <button class="btn btn-primary btn-order">Pesan</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabel daftar produk -->
+  <div class="my-5">
+    <h3>Daftar Produk Jeans</h3>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th>Nama Produk</th>
+            <th>Gambar</th>
+            <th>Deskripsi</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Jeans Cutbray</td>
+            <td><img src="/images/Jeans.jpg" width="120" alt=""></td>
+            <td>Model klasik, nyaman dipakai sehari-hari.</td>
+            <td>Rp 75.000</td>
+          </tr>
+          <tr>
+            <td>Jeans Pensil</td>
+            <td><img src="/images/skiny.jpg" width="120" alt=""></td>
+            <td>Slim fit, cocok gaya kasual.</td>
+            <td>Rp 50.000</td>
+          </tr>
+          <tr>
+            <td>Jeans Kulot</td>
+            <td><img src="/images/jeanskulot.jpg" width="120" alt=""></td>
+            <td>Longgar & stylish.</td>
+            <td>Rp 55.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+<!-- === TESTIMONI + RATING === -->
+      <section class="mb-5">
+        <h2>Ulasan & Rating Pelanggan</h2>
+        <div id="testimoni-container"></div>
+      </section>
+
+      <!-- === MEDIA PROMOSI === -->
+      <div class="media mb-4">
+        <h2>Media Promosi</h2>
+
+        <video width="320" height="240" controls>
+          <source src="/videos/video.mp4" type="video/mp4">
+          Browser Anda tidak mendukung video tag.
+        </video>
+        <p>Video promosi Hafis Collections (placeholder)</p>
+
+        <audio controls>
+          <source src="/audio/audio.mp3" type="audio/mpeg">
+          Browser Anda tidak mendukung audio tag.
+        </audio>
+        <p>Audio promosi Hafis Collections (placeholder)</p>
+      </div>
+
+  <!-- Form Hitung Total Belanja -->
+  <div class="my-4">
+    <h3>Hitung Total Belanja Anda</h3>
+    <form id="formBelanja" class="row g-3">
+      <div class="col-md-4">
+        <label for="harga" class="form-label">Harga Produk (Rp)</label>
+        <input type="number" class="form-control" id="harga" placeholder="contoh: 75000" required>
+      </div>
+      <div class="col-md-4">
+        <label for="jumlah" class="form-label">Jumlah Beli</label>
+        <input type="number" class="form-control" id="jumlah" placeholder="contoh: 2" required>
+      </div>
+      <div class="col-md-4 d-flex align-items-end">
+        <button type="submit" class="btn btn-success">Hitung Total</button>
+      </div>
+    </form>
+    <div id="hasil-total" class="mt-3"></div>
+  </div>
+</main>
+
+<!-- Modal untuk preview gambar -->
+<div class="modal fade" id="imageModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <img src="" id="modalImage" class="img-fluid w-100" alt="">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center py-3 bg-dark text-light">
+  <p class="mb-0">&copy; 2025 Hafis Collections</p>
+</footer>
+
+<!-- jQuery + Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+$(function(){
+  // Event: klik thumbnail -> buka modal
+  $(".product-thumb").on("click", function(){
+    const src = $(this).attr("data-src") || $(this).attr("src");
+    $("#modalImage").attr("src", src);
+    const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+    modal.show();
+  });
+
+  // Event: submit form hitung total
+  $("#formBelanja").on("submit", function(e){
+    e.preventDefault();
+    const harga = parseInt($("#harga").val(),10);
+    const jumlah = parseInt($("#jumlah").val(),10);
+    if (isNaN(harga) || isNaN(jumlah) || harga <=0 || jumlah <=0) {
+      $("#hasil-total").html('<div class="alert alert-danger">Masukkan angka yang valid!</div>');
+      return;
+    }
+    const total = harga * jumlah;
+    $("#hasil-total").html(`<div class="alert alert-success">Total Belanja Anda: Rp ${total.toLocaleString('id-ID')}</div>`);
+  });
+
+  // Event: tombol Pesan
+  $(document).on("click", ".btn-order", function(){
+    alert("Terima kasih, pesanan Anda (simulasi) telah diterima.");
+  });
+});
+</script>
+</body>
+</html>
